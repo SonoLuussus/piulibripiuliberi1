@@ -1,675 +1,290 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Exported from Figma">
-  <title>Exported Figma Design</title>
-  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>Programma 2025 – Eventi</title>
 
-  <link rel="stylesheet" href="styles.css">
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+    --red: #e30613;
+    --text: #111;
+    --gray: #666;
+    --border: #e5e5e5;
+}
+
+/* BASE */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: #fff;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    border-bottom: 1px solid var(--border);
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 0;
+}
+
+.logo {
+    border: 2px solid var(--red);
+    color: var(--red);
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 1.1;
+    padding: 8px 10px;
+}
+
+.menu {
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu a.active {
+    font-weight: 700;
+}
+
+/* DATE */
+.header-date {
+    text-align: center;
+    font-size: 13px;
+    padding-bottom: 14px;
+}
+
+.header-date span {
+    color: var(--red);
+    font-weight: 600;
+}
+
+/* SEARCH */
+.search-bar {
+    background: var(--red);
+    padding: 10px 0;
+}
+
+.search-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 120px;
+    gap: 6px;
+}
+
+.search-grid input,
+.search-grid select {
+    padding: 10px;
+    border: none;
+    font-size: 13px;
+}
+
+.search-grid button {
+    background: #000;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* MAIN */
+main {
+    padding: 50px 0;
+}
+
+/* TITLE */
+.section-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.section-title span {
+    background: var(--red);
+    color: #fff;
+    padding: 4px 10px;
+    margin-left: 8px;
+}
+
+/* EVENTS GRID */
+.events {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 40px;
+}
+
+/* EVENT */
+.event {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 22px;
+}
+
+.event-date {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.event-date span {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--gray);
+    margin-left: 6px;
+}
+
+.event-title {
+    margin-top: 12px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.event-place {
+    color: var(--red);
+    font-size: 14px;
+    font-weight: 700;
+    margin: 4px 0;
+}
+
+.event-desc {
+    font-size: 13px;
+    line-height: 1.4;
+    color: #333;
+}
+
+.event-btn {
+    display: inline-block;
+    margin-top: 10px;
+    background: var(--red);
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 10px;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    padding: 40px 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+    .events {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .events {
+        grid-template-columns: 1fr;
+    }
+    .search-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
 </head>
+
 <body>
-<div class="1920w-default-1">
-<div class="header-2">
-<div class="background-3">
-<div class="link-4">
-<div class="node-5">
-<div class="plpl2018-logo-svg-6">
-<img src="images/vector-7.svg" class="vector-7" alt="vector" />
-<img src="images/vector-8.svg" class="vector-8" alt="vector" />
-<img src="images/vector-9.svg" class="vector-9" alt="vector" />
-<div class="group-10">
-<img src="images/vector-11.svg" class="vector-11" alt="vector" />
-<img src="images/vector-12.svg" class="vector-12" alt="vector" />
-</div>
-<img src="images/vector-13.svg" class="vector-13" alt="vector" />
-<div class="group-14">
-<img src="images/vector-15.svg" class="vector-15" alt="vector" />
-<img src="images/vector-16.svg" class="vector-16" alt="vector" />
-</div>
-<img src="images/vector-17.svg" class="vector-17" alt="vector" />
-<img src="images/vector-18.svg" class="vector-18" alt="vector" />
-<img src="images/vector-19.svg" class="vector-19" alt="vector" />
-<img src="images/vector-20.svg" class="vector-20" alt="vector" />
-<div class="group-21">
-<img src="images/vector-22.svg" class="vector-22" alt="vector" />
-</div>
-<img src="images/vector-23.svg" class="vector-23" alt="vector" />
-<div class="group-24">
-<img src="images/vector-25.svg" class="vector-25" alt="vector" />
-</div>
-<img src="images/vector-26.svg" class="vector-26" alt="vector" />
-<div class="group-27">
-<img src="images/vector-28.svg" class="vector-28" alt="vector" />
-</div>
-<img src="images/vector-29.svg" class="vector-29" alt="vector" />
-<div class="group-30">
-<img src="images/vector-31.svg" class="vector-31" alt="vector" />
-</div>
-<img src="images/vector-32.svg" class="vector-32" alt="vector" />
-</div>
-</div>
-</div>
-<div class="nav-list-33">
-<div class="item-34">
-<div class="link-35">
-<p class="text-36"><span class="text-rgb-35-31-32">Espositori</span></p>
-</div>
-</div>
-<div class="item-37">
-<div class="link-38">
-<p class="text-39"><span class="text-rgb-35-31-32">Programma 2025</span></p>
-</div>
-</div>
-<div class="item-40">
-<div class="link-41">
-<p class="text-42"><span class="text-rgb-35-31-32">PLPL TV</span></p>
-</div>
-</div>
-<div class="item-43">
-<div class="link-44">
-<p class="text-45"><span class="text-rgb-35-31-32">La fiera</span></p>
-</div>
-</div>
-<div class="item-46">
-<div class="link-47">
-<p class="text-48"><span class="text-rgb-35-31-32">B2B</span></p>
-</div>
-</div>
-<div class="item-49">
-<div class="link-50">
-<p class="text-51"><span class="text-rgb-35-31-32">Press</span></p>
-</div>
-</div>
-</div>
-<div class="list-52">
-<div class="item-link-53">
-<div class="mask-group-54">
-<div class="mask-55">
-<div class="icon-search-svg-fill-56">
-<div class="icon-search-svg-57">
-<img src="images/vector-58.svg" class="vector-58" alt="vector" />
-</div>
-</div>
-</div>
-<div class="background-59"></div>
-</div>
-</div>
-<div class="item-60">
-<div class="link-61">
-<p class="text-62"><span class="text-rgb-35-31-32">Ita</span></p>
-</div>
-<p class="text-63"><span class="text-rgb-67-67-67">/</span></p>
-<div class="link-64">
-<p class="text-65"><span class="text-rgb-35-31-32">Eng</span></p>
-</div>
-</div>
-<div class="item-link-66">
-<div class="mask-group-67">
-<div class="mask-68">
-<div class="icon-lock-svg-fill-69">
-<div class="icon-lock-svg-70">
-<img src="images/vector-71.svg" class="vector-71" alt="vector" />
-</div>
-</div>
-</div>
-<div class="background-72"></div>
-</div>
-</div>
-</div>
-</div>
-<div class="background-73">
-<div class="list-74">
-<div class="item-link-75">
-<p class="text-76"><span class="text-rgb-35-31-32">La Nuvola</span></p>
-</div>
-<p class="text-77"><span class="text-rgb-227-6-19">4 - 8 dicembre 2025</span></p>
-</div>
-</div>
-</div>
-<div class="section-heading-1-78">
-<p class="text-79"><span class="text-white">Eventi</span></p>
-</div>
-<div class="section-80">
-<div class="form-nav-list-81">
-<div class="item-82">
-<div class="input-83">
-<div class="container-84">
-<p class="text-85"><span class="text-rgb-35-31-32">Cerca tra gli eventi...</span></p>
-</div>
-</div>
-<div class="mask-group-86">
-<div class="mask-87">
-<div class="icon-lupa-svg-fill-88">
-<div class="icon-lupa-svg-89">
-<img src="images/vector-90.svg" class="vector-90" alt="vector" />
-</div>
-</div>
-</div>
-<div class="background-91"></div>
-</div>
-</div>
-<div class="item-92">
-<div class="link-93">
-<p class="text-94"><span class="text-rgb-35-31-32">Giorno</span></p>
-<div class="image-95">
-<div class="node-96">
-<div class="icon-chevron-r-svg-97">
-<img src="images/vector-98.svg" class="vector-98" alt="vector" />
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="item-99">
-<div class="link-100">
-<p class="text-101"><span class="text-rgb-35-31-32">Orario</span></p>
-<div class="image-102">
-<div class="node-103">
-<div class="icon-chevron-r-svg-104">
-<img src="images/vector-105.svg" class="vector-105" alt="vector" />
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="item-106">
-<div class="link-107">
-<p class="text-108"><span class="text-rgb-35-31-32">Categoria</span></p>
-<div class="image-109">
-<div class="node-110">
-<div class="icon-chevron-r-svg-111">
-<img src="images/vector-112.svg" class="vector-112" alt="vector" />
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="item-113">
-<div class="link-114">
-<p class="text-115"><span class="text-rgb-35-31-32">Sala</span></p>
-<div class="image-116">
-<div class="node-117">
-<div class="icon-chevron-r-svg-118">
-<img src="images/vector-119.svg" class="vector-119" alt="vector" />
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="item-120">
-<div class="button-121">
-<p class="text-122"><span class="text-white">CERCA</span></p>
-</div>
-</div>
-</div>
-<div class="link-123">
-<p class="text-124"><span class="text-white">Scarica il programma completo</span></p>
-</div>
-</div>
-<div class="section-125">
-<div class="heading-1-126">
-<p class="text-127"><span class="text-rgb-35-31-32">Prossimi </span></p>
-<div class="background-128">
-<p class="text-129"><span class="text-white">eventi</span></p>
-</div>
-</div>
-<div class="container-130">
-<div class="article-131">
-<p class="text-132"><span class="text-rgb-35-31-32">5</span></p>
-<p class="text-133"><span class="text-rgb-35-31-32">Dicembre ore 16.00</span></p>
-<p class="text-134"><span class="text-rgb-227-6-19">Arena Repubblica - Robinson</span></p>
-<div class="image-135">
-<div class="node-136">
-<div class="icon-culturale-svg-137">
-<img src="images/vector-138.svg" class="vector-138" alt="vector" />
-</div>
-</div>
-</div>
-<p class="text-139"><span class="text-rgb-35-31-32">Culturale</span></p>
-<p class="text-140"><span class="text-rgb-35-31-32">Le ragioni del NO
-Con Giuseppe Santalucia
-Modera Giuliano Foschini</span></p>
-<div class="link-141">
-<p class="text-142"><span class="text-white">Scopri di più</span></p>
-<div class="image-143">
-<div class="node-144">
-<div class="icon-arrow-right-svg-145">
-<img src="images/vector-146.svg" class="vector-146" alt="vector" />
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="article-147">
-<p class="text-148"><span class="text-rgb-35-31-32">8</span></p>
-<p class="text-149"><span class="text-rgb-35-31-32">Dicembre ore 18.00</span></p>
-<p class="text-150"><span class="text-rgb-227-6-19">Sala Elettra</span></p>
-<div class="image-151">
-<div class="node-152">
-<div class="icon-culturale-svg-153">
-<img src="images/vector-154.svg" class="vector-154" alt="vector" />
-</div>
-</div>
-</div>
-<p class="text-155"><span class="text-rgb-35-31-32">Culturale</span></p>
-<p class="text-156"><span class="text-rgb-35-31-32">Altre vie: i corridoi umanitari e l’economia giusta
-Presentazione dei libri L’altra strada e </span></p>
-<div class="emphasis-157">
-<p class="text-158"><span class="text-rgb-35-31-32">Andare oltre la crescita</span></p>
-<p class="text-159"><span class="text-rgb-35-31-32">economica </span></p>
-</div>
-<p class="text-160"><span class="text-rgb-35-31-32">di Caritas Italiana</span></p>
-<p class="text-161"><span class="text-rgb-35-31-32">Intervengono Paolo Valente, </span></p>
-<div class="strong-162">
-<p class="text-163"><span class="text-rgb-35-31-32">Oliviero Forti, Massimo</span></p>
-<p class="text-164"><span class="text-rgb-35-31-32">Pallottino </span></p>
-</div>
-<p class="text-165"><span class="text-rgb-35-31-32">e don Mattia Ferrari</span></p>
-<p class="text-166"><span class="text-rgb-35-31-32">A cura di EMI e EDB</span></p>
-<div class="link-167">
-<p class="text-168"><span class="text-white">Scopri di più</span></p>
-<div class="image-169">
-<div class="node-170">
-<div class="icon-arrow-right-svg-171">
-<img src="images/vector-172.svg" class="vector-172" alt="vector" />
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="article-173">
-<p class="text-174"><span class="text-rgb-35-31-32">7</span></p>
-<p class="text-175"><span class="text-rgb-35-31-32">Dicembre ore 19.00</span></p>
-<p class="text-176"><span class="text-rgb-227-6-19">Sala Aldus</span></p>
-<div class="image-177">
-<div class="node-178">
-<div class="icon-culturale-svg-179">
-<img src="images/vector-180.svg" class="vector-180" alt="vector" />
-</div>
-</div>
-</div>
-<p class="text-181"><span class="text-rgb-35-31-32">Culturale</span></p>
-<p class="text-182"><span class="text-rgb-35-31-32">Il cavalletto di Siviglia
-Presentazione del libro di Paolo Zagari
-Intervengono l’autore, Massimiliano Griner, </span></p>
-<div class="strong-183">
-<p class="text-184"><span class="text-rgb-35-31-32">Mariarita</span></p>
-<p class="text-185"><span class="text-rgb-35-31-32">Valentini </span></p>
-</div>
-<p class="text-186"><span class="text-rgb-35-31-32">e Sara Ferraioli</span></p>
-<p class="text-187"><span class="text-rgb-35-31-32">A cura di MdS Editore</span></p>
-<div class="link-188">
-<p class="text-189"><span class="text-white">Scopri di più</span></p>
-<div class="image-190">
-<div class="node-191">
-<div class="icon-arrow-right-svg-192">
-<img src="images/vector-193.svg" class="vector-193" alt="vector" />
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="article-194">
-<p class="text-195"><span class="text-rgb-35-31-32">5</span></p>
-<p class="text-196"><span class="text-rgb-35-31-32">Dicembre ore 13.45</span></p>
-<p class="text-197"><span class="text-rgb-227-6-19">Arena Repubblica - Robinson</span></p>
-<div class="image-198">
-<div class="node-199">
-<div class="icon-culturale-svg-200">
-<img src="images/vector-201.svg" class="vector-201" alt="vector" />
-</div>
-</div>
-</div>
-<p class="text-202"><span class="text-rgb-35-31-32">Culturale</span></p>
-<p class="text-203"><span class="text-rgb-35-31-32">Scrivere per e con i ragazzi
-Con Eraldo Affinati e Nicoletta Verna
-Modera Lara Crinò</span></p>
-<div class="link-204">
-<p class="text-205"><span class="text-white">Scopri di più</span></p>
-<div class="image-206">
-<div class="node-207">
-<div class="icon-arrow-right-svg-208">
-<img src="images/vector-209.svg" class="vector-209" alt="vector" />
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="article-210">
-<p class="text-211"><span class="text-rgb-35-31-32">4</span></p>
-<p class="text-212"><span class="text-rgb-35-31-32">Dicembre ore 12.30</span></p>
-<p class="text-213"><span class="text-rgb-227-6-19">Sala Vega</span></p>
-<div class="image-214">
-<div class="node-215">
-<div class="icon-ragazzi-svg-216">
-<img src="images/vector-217.svg" class="vector-217" alt="vector" />
-<img src="images/vector-218.svg" class="vector-218" alt="vector" />
-<img src="images/vector-219.svg" class="vector-219" alt="vector" />
-<img src="images/vector-220.svg" class="vector-220" alt="vector" />
-</div>
-</div>
-</div>
-<p class="text-221"><span class="text-rgb-35-31-32">Ragazzi</span></p>
-<p class="text-222"><span class="text-rgb-35-31-32">Non c’è smartphone che tenga
-Presentazione del libro di Gabriele Lugaro
-Intervengono l’autore, Cosimo Di Bari e Claudia Cirella
-A cura di Anicia Edizioni
-Incontro su prenotazione per ragazzi da 13 anni in su</span></p>
-<div class="link-223">
-<p class="text-224"><span class="text-white">Scopri di più</span></p>
-<div class="image-225">
-<div class="node-226">
-<div class="icon-arrow-right-svg-227">
-<img src="images/vector-228.svg" class="vector-228" alt="vector" />
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="article-229">
-<p class="text-230"><span class="text-rgb-35-31-32">4</span></p>
-<p class="text-231"><span class="text-rgb-35-31-32">Dicembre ore 18.30</span></p>
-<p class="text-232"><span class="text-rgb-227-6-19">Sala Antares</span></p>
-<div class="image-233">
-<div class="node-234">
-<div class="icon-culturale-svg-235">
-<img src="images/vector-236.svg" class="vector-236" alt="vector" />
-</div>
-</div>
-</div>
-<p class="text-237"><span class="text-rgb-35-31-32">Culturale</span></p>
-<p class="text-238"><span class="text-rgb-35-31-32">Il barone dei matti. Le tre vite di Pietro Pisani, barone di
-Palermo</span></p>
-<p class="text-239"><span class="text-rgb-35-31-32">Presentazione del libro di Antonio Mistretta
-Intervengono l’autore, Gemma Calamandrei ed Enrico Alleva
-A cura di La Lepre Edizioni</span></p>
-<div class="link-240">
-<p class="text-241"><span class="text-white">Scopri di più</span></p>
-<div class="image-242">
-<div class="node-243">
-<div class="icon-arrow-right-svg-244">
-<img src="images/vector-245.svg" class="vector-245" alt="vector" />
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="article-246">
-<p class="text-247"><span class="text-rgb-35-31-32">5</span></p>
-<p class="text-248"><span class="text-rgb-35-31-32">Dicembre ore 19.00</span></p>
-<p class="text-249"><span class="text-rgb-227-6-19">Sala Polaris</span></p>
-<div class="image-250">
-<div class="node-251">
-<div class="icon-culturale-svg-252">
-<img src="images/vector-253.svg" class="vector-253" alt="vector" />
-</div>
-</div>
-</div>
-<p class="text-254"><span class="text-rgb-35-31-32">Culturale</span></p>
-<p class="text-255"><span class="text-rgb-35-31-32">Scrittori che parlano di scrittori
-Introduce Gaja Lombardi Cenciarelli
-Susanna Tartaro su Philip Roth
-Rossano Astremo su Allen Ginsberg
-A cura di Più libri più liberi</span></p>
-<div class="link-256">
-<p class="text-257"><span class="text-white">Scopri di più</span></p>
-<div class="image-258">
-<div class="node-259">
-<div class="icon-arrow-right-svg-260">
-<img src="images/vector-261.svg" class="vector-261" alt="vector" />
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="article-262">
-<p class="text-263"><span class="text-rgb-35-31-32">7</span></p>
-<p class="text-264"><span class="text-rgb-35-31-32">Dicembre ore 15.00</span></p>
-<p class="text-265"><span class="text-rgb-227-6-19">Sala Elettra</span></p>
-<div class="image-266">
-<div class="node-267">
-<div class="icon-culturale-svg-268">
-<img src="images/vector-269.svg" class="vector-269" alt="vector" />
-</div>
-</div>
-</div>
-<p class="text-270"><span class="text-rgb-35-31-32">Culturale</span></p>
-<p class="text-271"><span class="text-rgb-35-31-32">L’arte invisibile. Tradurre l’America Latina
-Intervengono Ilide Carmignani, Giulia Zavagna e </span></p>
-<div class="strong-272">
-<p class="text-273"><span class="text-rgb-35-31-32">Valerio</span></p>
-<p class="text-274"><span class="text-rgb-35-31-32">Magrelli</span></p>
-</div>
-<p class="text-275"><span class="text-rgb-35-31-32">A cura di </span></p>
-<div class="strong-276">
-<p class="text-277"><span class="text-rgb-35-31-32">IILA – Organizzazione internazionale italo-latina</span></p>
-<p class="text-278"><span class="text-rgb-35-31-32">americana</span></p>
-</div>
-<div class="link-279">
-<p class="text-280"><span class="text-white">Scopri di più</span></p>
-<div class="image-281">
-<div class="node-282">
-<div class="icon-arrow-right-svg-283">
-<img src="images/vector-284.svg" class="vector-284" alt="vector" />
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="article-285">
-<p class="text-286"><span class="text-rgb-35-31-32">8</span></p>
-<p class="text-287"><span class="text-rgb-35-31-32">Dicembre ore 11.00</span></p>
-<p class="text-288"><span class="text-rgb-227-6-19">Sala Giove</span></p>
-<div class="image-289">
-<div class="node-290">
-<div class="icon-culturale-svg-291">
-<img src="images/vector-292.svg" class="vector-292" alt="vector" />
-</div>
-</div>
-</div>
-<p class="text-293"><span class="text-rgb-35-31-32">Culturale</span></p>
-<p class="text-294"><span class="text-rgb-35-31-32">Ragione e sentimento: unione e separazione fra due
-fratelli</span></p>
-<p class="text-295"><span class="text-rgb-35-31-32">Presentazione del libro </span></p>
-<div class="emphasis-296">
-<p class="text-297"><span class="text-rgb-35-31-32">Ti ho preso per mano. Amare vuol dire</span></p>
-<p class="text-298"><span class="text-rgb-35-31-32">anche lasciar andare</span></p>
-</div>
-<p class="text-299"><span class="text-rgb-35-31-32"> di Riccardo Callori</span></p>
-<p class="text-300"><span class="text-rgb-35-31-32">Intervengono Piergiacomo Oderda e Antonio R. Labanca
-A cura di Edizioni Mille</span></p>
-<div class="link-301">
-<p class="text-302"><span class="text-white">Scopri di più</span></p>
-<div class="image-303">
-<div class="node-304">
-<div class="icon-arrow-right-svg-305">
-<img src="images/vector-306.svg" class="vector-306" alt="vector" />
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="article-307">
-<p class="text-308"><span class="text-rgb-35-31-32">7</span></p>
-<p class="text-309"><span class="text-rgb-35-31-32">Dicembre ore 17.30</span></p>
-<p class="text-310"><span class="text-rgb-227-6-19">Sala Sirio</span></p>
-<div class="image-311">
-<div class="node-312">
-<div class="icon-culturale-svg-313">
-<img src="images/vector-314.svg" class="vector-314" alt="vector" />
-</div>
-</div>
-</div>
-<p class="text-315"><span class="text-rgb-35-31-32">Culturale</span></p>
-<p class="text-316"><span class="text-rgb-35-31-32">Nuovi investigatori in casa Sellerio: Mirna Pagani e
-Domenico Cigno</span></p>
-<p class="text-317"><span class="text-rgb-35-31-32">Campania-Veneto andata e ritorno
-Presentazione dei libri La fame del Cigno di </span></p>
-<div class="strong-318">
-<p class="text-319"><span class="text-rgb-35-31-32">Luca</span></p>
-<p class="text-320"><span class="text-rgb-35-31-32">Mercadante</span></p>
-</div>
-<p class="text-321"><span class="text-rgb-35-31-32"> e Il valore delle cose di Serena Cappellozza</span></p>
-<p class="text-322"><span class="text-rgb-35-31-32">Intervengono gli autori
-Modera Marco Malvaldi
-A cura di Sellerio Editore</span></p>
-<div class="link-323">
-<p class="text-324"><span class="text-white">Scopri di più</span></p>
-<div class="image-325">
-<div class="node-326">
-<div class="icon-arrow-right-svg-327">
-<img src="images/vector-328.svg" class="vector-328" alt="vector" />
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="article-329">
-<p class="text-330"><span class="text-rgb-35-31-32">8</span></p>
-<p class="text-331"><span class="text-rgb-35-31-32">Dicembre ore 11.00</span></p>
-<p class="text-332"><span class="text-rgb-227-6-19">Sala Aurora</span></p>
-<div class="image-333">
-<div class="node-334">
-<div class="icon-culturale-svg-335">
-<img src="images/vector-336.svg" class="vector-336" alt="vector" />
-</div>
-</div>
-</div>
-<p class="text-337"><span class="text-rgb-35-31-32">Culturale</span></p>
-<p class="text-338"><span class="text-rgb-35-31-32">Quel che resta degli uomini
-Sulla mascolinità
-Presentazione del libro di Manolo Farci
-Intervengono l’autore, Cecilia D’Elia e Donata Columbro
-A cura di nottetempo</span></p>
-<div class="link-339">
-<p class="text-340"><span class="text-white">Scopri di più</span></p>
-<div class="image-341">
-<div class="node-342">
-<div class="icon-arrow-right-svg-343">
-<img src="images/vector-344.svg" class="vector-344" alt="vector" />
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="article-345">
-<p class="text-346"><span class="text-rgb-35-31-32">4</span></p>
-<p class="text-347"><span class="text-rgb-35-31-32">Dicembre ore 16.00</span></p>
-<p class="text-348"><span class="text-rgb-227-6-19">Sala Aurora</span></p>
-<div class="image-349">
-<div class="node-350">
-<div class="node-351">
-<div class="clip-path-group-352">
-<div class="a-353">
-<img src="images/vector-354.svg" class="vector-354" alt="vector" />
-</div>
-<div class="group-355">
-<img src="images/vector-356.svg" class="vector-356" alt="vector" />
-</div>
-</div>
-</div>
-</div>
-</div>
-<p class="text-357"><span class="text-rgb-35-31-32">Professionale</span></p>
-<p class="text-358"><span class="text-rgb-35-31-32">La cultura abita qui: politiche per città vive e inclusive
-Intervengono Innocenzo Cipolletta,</span></p>
-<div class="strong-359">
-<p class="text-360"><span class="text-rgb-35-31-32"> Adriana Poli</span></p>
-<p class="text-361"><span class="text-rgb-35-31-32">Bortone</span></p>
-</div>
-<p class="text-362"><span class="text-rgb-35-31-32">, Tommaso Sacchi e Massimiliano Smeriglio</span></p>
-<p class="text-363"><span class="text-rgb-35-31-32">Modera Paolo Conti
-A cura di AIE</span></p>
-<div class="link-364">
-<p class="text-365"><span class="text-white">Scopri di più</span></p>
-<div class="image-366">
-<div class="node-367">
-<div class="icon-arrow-right-svg-368">
-<img src="images/vector-369.svg" class="vector-369" alt="vector" />
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="list-370">
-<p class="text-371"><span class="text-rgb-67-67-67">1 di 63</span></p>
-<div class="item-link-372">
-<div class="image-373">
-<div class="node-374">
-<div class="icon-arrow-right-svg-375">
-<img src="images/vector-376.svg" class="vector-376" alt="vector" />
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="section-377">
-<img src="images/aie_logo-png-378.png" class="aie_logo-png-378" alt="aie_logo-png" />
-<p class="text-379"><span class="text-rgb-35-31-32">Una manifestazione di</span></p>
-<img src="images/node-380.png" class="node-380" alt="ministero_cultura-logo-png" />
-<img src="images/node-381.png" class="node-381" alt="centro_libro_lettura-logo-png" />
-<img src="images/node-382.png" class="node-382" alt="regione_lazio-logo-png" />
-<img src="images/roma-logo-png-383.png" class="roma-logo-png-383" alt="roma-logo-png" />
-<img src="images/node-384.png" class="node-384" alt="camera_commercio_roma-logo-png" />
-<img src="images/node-385.png" class="node-385" alt="opportunitaly-ita-png" />
-<p class="text-386"><span class="text-rgb-35-31-32">Sostenuta da</span></p>
-<img src="images/siae-logo-png-387.png" class="siae-logo-png-387" alt="siae-logo-png" />
-<img src="images/node-388.png" class="node-388" alt="poste_italiane-logo-ok-png" />
-<img src="images/bper-logo-b-png-389.png" class="bper-logo-b-png-389" alt="bper-logo-b-png" />
-<p class="text-390"><span class="text-rgb-35-31-32">Con il contributo di</span></p>
-<img src="images/node-391.png" class="node-391" alt="biblioteche_roma-logo-png" />
-<img src="images/atac-logo-png-392.png" class="atac-logo-png-392" alt="atac-logo-png" />
-<img src="images/evr-logo-png-393.png" class="evr-logo-png-393" alt="evr-logo-png" />
-<p class="text-394"><span class="text-rgb-35-31-32">In collaborazione con</span></p>
-<img src="images/dior-logo-png-395.png" class="dior-logo-png-395" alt="dior-logo-png" />
-<p class="text-396"><span class="text-rgb-35-31-32">Project Partner</span></p>
-<img src="images/rai-logo-png-397.png" class="rai-logo-png-397" alt="rai-logo-png" />
-<p class="text-398"><span class="text-rgb-35-31-32">Main Media Partner</span></p>
-<img src="images/gdl-logo-png-399.png" class="gdl-logo-png-399" alt="gdl-logo-png" />
-<p class="text-400"><span class="text-rgb-35-31-32">Media partner</span></p>
-<img src="images/gruppo-meta-png-401.png" class="gruppo-meta-png-401" alt="gruppo-meta-png" />
-<img src="images/vivaticket-logo-png-402.png" class="vivaticket-logo-png-402" alt="vivaticket-logo-png" />
-<img src="images/csc-logo-png-403.png" class="csc-logo-png-403" alt="csc-logo-png" />
-<img src="images/pubblitre-logo-png-404.png" class="pubblitre-logo-png-404" alt="pubblitre-logo-png" />
-<p class="text-405"><span class="text-rgb-35-31-32">Technical partner</span></p>
-<img src="images/aldus-logo-png-406.png" class="aldus-logo-png-406" alt="aldus-logo-png" />
-<img src="images/clearedi-logo-png-407.png" class="clearedi-logo-png-407" alt="clearedi-logo-png" />
-<img src="images/lia-logo-png-408.png" class="lia-logo-png-408" alt="lia-logo-png" />
-<img src="images/gdl-logo-1-png-409.png" class="gdl-logo-1-png-409" alt="gdl-logo-1-png" />
-<img src="images/node-410.png" class="node-410" alt="ioleggoperche-logo-png" />
-<img src="images/isbn-logo-png-411.png" class="isbn-logo-png-411" alt="isbn-logo-png" />
-<img src="images/medra-logo-png-412.png" class="medra-logo-png-412" alt="medra-logo-png" />
-<img src="images/node-413.png" class="node-413" alt="zaino_digitale-logo-png" />
-<p class="text-414"><span class="text-rgb-35-31-32">AIE è anche</span></p>
-</div>
-<div class="link-415">
-<div class="image-fill-416">
-<div class="image-417">
-<img src="images/vector-418.svg" class="vector-418" alt="vector" />
-</div>
-</div>
-<p class="text-419"><span class="text-black">Privacy Policy</span></p>
-</div>
-<div class="link-420">
-<div class="image-fill-421">
-<div class="image-422">
-<img src="images/vector-423.svg" class="vector-423" alt="vector" />
-</div>
-</div>
-<p class="text-424"><span class="text-black">Cookie Policy</span></p>
-</div>
-<div class="background-425">
-<p class="text-426"><span class="text-rgb-125-125-125">Copyright ©2016 Ediser S.r.l. a Socio Unico – Società di servizi dell’Associazione Italiana Editori – Tutti i diritti riservati – P.IVA 03763520966</span></p>
-<div class="link-427">
-<p class="text-428"><span class="text-rgb-35-31-32">Privacy Policy</span></p>
-</div>
-</div>
-</div>
+
+<header>
+    <div class="container">
+        <div class="header-top">
+            <div class="logo">PIÙ LIBRI<br>PIÙ LIBERI</div>
+            <nav class="menu">
+                <a href="#">La fiera</a>
+                <a href="#">Espositori</a>
+                <a class="active" href="#">Programma 2025</a>
+                <a href="#">B2B</a>
+                <a href="#">Press</a>
+                <a href="#">PLPL TV</a>
+            </nav>
+        </div>
+
+        <div class="header-date">
+            <span>4 – 8 dicembre 2025</span> · La Nuvola
+        </div>
+    </div>
+
+    <div class="search-bar">
+        <div class="container search-grid">
+            <input type="text" placeholder="Cerca tra gli eventi…">
+            <select><option>Giorno</option></select>
+            <select><option>Orario</option></select>
+            <select><option>Categoria</option></select>
+            <select><option>Sala</option></select>
+            <button>CERCA</button>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <div class="section-title">
+        PROSSIMI <span>EVENTI</span>
+    </div>
+
+    <div class="events">
+
+        <div class="event">
+            <div class="event-date">5 <span>Dicembre ore 16.00</span></div>
+            <div class="event-title">Le ragioni del NO</div>
+            <div class="event-place">Arena Repubblica - Robinson</div>
+            <div class="event-desc">
+                Con Giuseppe Santolucia<br>
+                Modera Giuliano Foschini
+            </div>
+            <a class="event-btn" href="#">Scopri di più →</a>
+        </div>
+
+        <div class="event">
+            <div class="event-date">8 <span>Dicembre ore 18.00</span></div>
+            <div class="event-title">Altre vie: i corridoi umanitari</div>
+            <div class="event-place">Sala Elettra</div>
+            <div class="event-desc">
+                Con Paolo Valente, Oliviero Forti<br>
+                A cura di EMi e EDB
+            </div>
+            <a class="event-btn" href="#">Scopri di più →</a>
+        </div>
+
+        <div class="event">
+            <div class="event-date">7 <span>Dicembre ore 19.00</span></div>
+            <div class="event-title">Il cavalletto di Siviglia</div>
+            <div class="event-place">Sala Alettra</div>
+            <div class="event-desc">
+                Presentazione del libro di Paolo Zagari
+            </div>
+            <a class="event-btn" href="#">Scopri di più →</a>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    Progetto scolastico – riproduzione layout sito eventi
+</footer>
 
 </body>
 </html>
